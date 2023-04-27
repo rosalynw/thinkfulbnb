@@ -4,6 +4,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+
 h2 {
   font-size: 26px;
   font-weight: 400;
@@ -16,11 +17,6 @@ h3 {
   font-weight: 500;
 }
 
-.form-group {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-}
 
 p {
   line-height: 1.5em;
@@ -30,6 +26,8 @@ p {
 section {
   padding: 20px;
 }
+
+
 
 section.alternate-background {
   background-color: #00a699;
@@ -47,9 +45,10 @@ section img {
 
 /* ---  Groups & Items --- */
 
-.group {
+.group div {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .item {
@@ -71,7 +70,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 52px;
   color: #fff;
 }
 
@@ -156,34 +155,36 @@ footer p {
 
   header nav ul li a:hover {
     color: purple;
-}
-
-  main form {
-    display: flex;
-    justify-content: space-between;
-  }
-  .form-group {
-    display: flex;
-    flex-direction: column;
   }
 
   .group {
     display: flex;
     flex-direction: row;
-  }
-  .group img {
-    padding: 10px;
-    min-width: 200px;
-    max-width: 500px;
-  }
-  
-  .group p {
-    display: flex;
-    text-align: justify;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 7px;
-    max-width: calc(2 * 500px + 20px);
   }
+
+  .group div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .group-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .image-wrapper {
+    flex: 1;
+    margin: 0 6px;
+  }
+
+  .text-wrapper {
+    flex: 2;
+  }
+
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
