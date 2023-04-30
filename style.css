@@ -45,11 +45,24 @@ section img {
 
 /* ---  Groups & Items --- */
 
+.group div {
+  display: flex;
+  align-items: center;
+}
 .group .input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.image-wrapper {
+  flex: 1;
+  margin: 0 6px;
+}
+
+.text-wrapper {
+  flex: 2;
 }
 
 .item {
@@ -181,16 +194,6 @@ footer p {
     align-items: start;
   }
 
-
-
-  .image-wrapper {
-    flex: 1;
-    margin: 0 6px;
-  }
-
-  .text-wrapper {
-    flex: 2;
-  }
 
   .wrapper {
     display: grid;
