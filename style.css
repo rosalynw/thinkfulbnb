@@ -45,10 +45,11 @@ section img {
 
 /* ---  Groups & Items --- */
 
-.group div {
+.group .input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .item {
@@ -81,6 +82,7 @@ header nav {
 
 header nav ul {
   display: flex;
+  justify-content: space-between;
 }
 
 header nav ul li {
@@ -90,7 +92,7 @@ header nav ul li {
 header nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 0 20px 0 0;
+  padding: 0 10px 0 0;
   
 }
 
@@ -145,36 +147,41 @@ footer p {
   }
 
   .logo {
+    display: flex;
     font-size: 45px;
     margin-bottom: 10px;
   }
+  
   header nav {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+
   }
 
-  header nav ul li a:hover {
-    color: purple;
+  header nav ul li {
+    display: flex;
+    text-align: center;    
+  }
+
+  header nav ul li:last-child a {
+    margin-right: 0;
   }
 
   .group {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-  }
-
-  .group div {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .group-3 {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
   }
+
+  .group .input {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: start;
+  }
+
+
 
   .image-wrapper {
     flex: 1;
@@ -219,9 +226,5 @@ footer p {
     max-width: 40%;
     text-align: left;
   }
- 
-  
-
-
 
 }
