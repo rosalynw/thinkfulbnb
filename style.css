@@ -45,20 +45,23 @@ section img {
 
 /* ---  Groups & Items --- */
 
-.group div {
+form.group {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
-.group .input {
+
+.input {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
 .image-wrapper {
   flex: 1;
   margin: 0 6px;
+}
+
+.image-wrapper img {
+  width: 100%;
 }
 
 .text-wrapper {
@@ -168,7 +171,6 @@ footer p {
   header nav {
     display: flex;
     flex-direction: row;
-
   }
 
   header nav ul li {
@@ -180,20 +182,25 @@ footer p {
     margin-right: 0;
   }
 
-  .group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  form.group {
     flex-direction: row;
   }
 
-  .group .input {
+  div.group {
     display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
+    align-items: center;
   }
 
+   .input {
+    width: 20%;
+    font-size: small;
+    flex-direction: column;
+  }
+
+  .input:last-child {
+    margin-right: 0;
+  }
 
   .wrapper {
     display: grid;
@@ -220,7 +227,7 @@ footer p {
    
   }
   .item-double {
-    width: 30%;
+    width: 100%;
     max-width: 500px;
     height: auto;
   }
