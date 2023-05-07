@@ -27,7 +27,12 @@ section {
   padding: 20px;
 }
 
-
+div .group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
 section.alternate-background {
   background-color: #00a699;
@@ -125,12 +130,14 @@ form {
 
 form label {
   font-weight: bold;
+  padding-right: 30px;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 100%;
+  max-width: 180px;
 }
 
 form button {
@@ -184,12 +191,19 @@ footer p {
 
   form.group {
     flex-direction: row;
+    gap: 30px;
+  }
+
+  form label {
+    padding-right: 0;
+  }
+  
+  form select, form input {
+    margin-bottom: 0;
   }
 
   div.group {
-    display: flex;
     flex-direction: row;
-    align-items: center;
   }
 
    .input {
